@@ -1,5 +1,6 @@
 import java.util.Scanner;
-public class largest {
+
+public class second_largest {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("enter size of array : ");
@@ -10,12 +11,14 @@ public class largest {
             arr[i] = sc.nextInt();    
         }
         int max = 0;
+        int sec_max = 0;
         for (int i = 0; i < n; i++){
             if (arr[i]>max){
+                sec_max = max;
                 max = arr[i];
             }
         }
-        System.out.println("Largest element is : " + max);
+        System.out.println("Second largest element is : " + sec_max);
         sc.close();
     }
 }
